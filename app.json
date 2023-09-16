@@ -1,0 +1,62 @@
+{
+    "name": "BoyLeo ダ ᴍᴜsɪᴄ",
+    "description": "Bot Music Telegram Vip Pro.",
+    "logo": "https://telegra.ph/file/7f2608c847dec69d3077b.png",
+    "keywords": [
+    "python3",
+    "telegram",
+    "BoyLeo",
+    "MusicBot",
+    "telegram-bot",
+    "pyrogram"
+    ],
+    "env": {
+      "API_ID": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "23527111",
+        "required": true
+      },
+      "API_HASH": {
+        "description": "Get this value from https://my.telegram.org",
+        "value": "954249b8fe5bcfd742c5ae3a7ec30334",
+        "required": true
+      },
+      "BOT_TOKEN": {
+        "description": "A Bot's token from Botfather",
+        "value": "6624122804:AAFBjeoGNbiyfiHdM-FT2uQkwR8yze65k58",
+        "required": true
+      },
+      "OWNER_ID": {
+        "description": "Fill your user id here. (Must be integer)",
+        "value": "5075416614",
+        "required": true
+      },
+      "SESSION": {
+        "description": "A pyrogram v2 string session from @StringFatherBot",
+        "value": "BQFm_scAgVAGvqd3tF963YD_8RwOYuyopjBmY4SRJxgAsEABviRZZa00Fv3Skn3MMh80PEEt2XCn9IRY4_O4gdAA68BlKV-leyNWGN_Nz0-3BWqFJMYsA0ONxirz3ay-OwHk4X4cYT6P-UXEcF_Vk_hwQIMmNVM2q1v40p4THBVcHw8okyHnE6hBIlKSPOCohsKUNClVbhsFdsmIkx7X8Kg1izEtHspL6AFbkBEZNudoMWmzgHABnhjcn44P1JDgVMRj-4Jf-lt2V_FMEOxDWtxBA-5i77MvZckljro-7Ow9qmYAb8mG2kdmF_5wfpcrMl0BdJ5SPOn3vnySzLdGaP7ijuUXIgAAAAFadkn8AA",
+        "required": true
+      },
+      "SUDO_USERS": {
+        "description": "The user id(s) of user(s) whom you would like to add as a sudo. Multiple values shall be seperated with a space.",
+        "value": "@Adimsegay",
+        "required": true
+      },
+      "SUPPORT_CHAT": {
+        "description": "Link of your telegram support group. (Must pe public)",
+        "value": "https://t.me/BoyLeo_Support",
+        "required": true
+      }
+    },
+    "buildpacks": [
+          {
+              "url": "heroku/python"
+          },
+          {
+              "url": "heroku/nodejs"
+          },
+          {
+              "url": "https://github.com/jonathanong/heroku-buildpack-ffmpeg-latest.git"
+          }
+      ],
+      "stack": "heroku-22"
+  }
